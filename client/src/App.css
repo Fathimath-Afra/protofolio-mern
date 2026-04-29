@@ -1,0 +1,112 @@
+/* App.css */
+body {
+  background-color: #0f172a;
+  color: white;
+  scroll-behavior: smooth; /* Smooth scroll when clicking Navbar links */
+}
+
+.hero-section {
+  padding: 120px 0;
+  background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent);
+}
+
+.project-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #3b82f6;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}
+
+.tech-badge {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #3b82f6 !important;
+}
+
+i {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover i {
+  transform: scale(1.1);
+}
+
+.display-1 {
+  font-size: 5rem; 
+  letter-spacing: -2px;
+}
+
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 3.5rem; 
+  }
+}
+
+.hero-section {
+  padding: 150px 0 100px 0; 
+}
+
+
+/* App.css additions */
+
+/* Lighter text for better reading on dark backgrounds */
+.text-light-gray {
+  color: #cbd5e1 !important; /* Lighter than 'secondary' for better visibility */
+}
+
+/* Make cards slightly lighter than the background to create depth */
+.skill-card {
+  background-color: #1e293b !important; /* Slate-800 */
+  border: 1px solid #334155 !important;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: #3b82f6 !important;
+  transform: translateY(-5px);
+  background-color: #243147 !important; /* Slightly lighter on hover */
+}
+
+/* Icon Box Styling */
+.icon-box {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Frontend Icon: Blue Glow */
+.frontend-icon {
+  background: rgba(59, 130, 246, 0.1);
+  color: #60a5fa;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+/* Backend Icon: Green Glow */
+.backend-icon {
+  background: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
+}
+
+/* Teaching Icon: Cyan/Info Glow */
+.teaching-icon {
+  background: rgba(6, 182, 212, 0.1);
+  color: #22d3ee;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+}
